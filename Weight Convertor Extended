@@ -1,0 +1,9 @@
+Weight=float(input('Please enter your weight: '))
+Type=input("Is this weight in (L)bs or (K)g: ")
+if Type.upper()=='L':
+    Result=Weight*0.45359237
+    Output=f'Your weight is {Result} in kilograms. '
+elif Type.upper()=='K':
+    Result=Weight/0.45359237
+    Output=f'Your weight is {Result} in pounds.'
+print(Output)
